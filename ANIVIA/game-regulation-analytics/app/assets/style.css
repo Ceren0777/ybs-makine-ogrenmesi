@@ -1,0 +1,68 @@
+/* Streamlit genel font ve arka plan */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+html, body, [data-testid="stStandardType"] {
+    font-family: 'VT323', monospace;
+}
+
+/* Ana Başlık (Açık Bebe Mavisi Kutu + Altın Çerçeve + Beyaz Yazı) */
+.main-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    background-color: #E0F2FE; /* Çok Açık Bebe Mavisi */
+    color: #1E3A8A !important; /* Okunabilirlik için Koyu Mavi Yazı */
+    text-align: center;
+    padding: 20px;
+    border: 6px solid #D4AF37; /* Altın Çerçeve */
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    display: block;
+}
+
+/* Sayfa Başlıkları (h1, h2, h3) için de aynı stil */
+h1, h2, h3 {
+    font-family: 'Press Start 2P', cursive !important;
+    background-color: #E0F2FE !important; /* Çok Açık Bebe Mavisi */
+    color: #1E3A8A !important; /* Okunabilirlik için Koyu Mavi Yazı */
+    padding: 15px !important;
+    border: 4px solid #D4AF37 !important;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    text-align: center;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+}
+
+/* Sidebar Başlıkları */
+[data-testid="stSidebarNav"] ::text {
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+}
+
+/* Buton Özelleştirme */
+.stButton > button {
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+    background: #D4AF37;
+    color: white !important;
+    border-radius: 0px;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 0px #000;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    width: 100%;
+    transition: none;
+}
+
+.stButton > button:hover {
+    background-color: #B8860B;
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px #000;
+}
+
+.stButton > button:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0px #000;
+}

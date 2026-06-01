@@ -1,12 +1,19 @@
 import streamlit as st
 import sys
 import os
+from utils import lokal_css_yukle, logo_koy
+
+st.set_page_config(page_title="Oyuncu Personaları", layout="wide")
+
+# CSS ve Logo yükle
+lokal_css_yukle()
+logo_koy()
 
 # src klasörünü yola ekle (Ayrı klasörde olduğu için)
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'src')))
 from data_fetchers import get_survey_data
 
-st.title("👨‍👩‍👧 Veli Algısı ve Risk Analizi")
+st.title("👨‍👩‍👧 Oyuncu Personaları")
 
 # SİBER GÜVENLİK KASASI TESTİ
 if "gsheets" in st.secrets.get("connections", {}):
