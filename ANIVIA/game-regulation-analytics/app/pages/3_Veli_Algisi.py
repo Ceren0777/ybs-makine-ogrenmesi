@@ -10,7 +10,7 @@ st.set_page_config(page_title="Veli Algısı", layout="wide")
 lokal_css_yukle()
 logo_koy()
 
-st.header("Veli Algısı")
+st.header("VELİ ALGISI")
 
 # Veri Yukleme
 @st.cache_data
