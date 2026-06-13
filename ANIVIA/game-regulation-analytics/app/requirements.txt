@@ -1,0 +1,8 @@
+pandas
+scikit-learn
+streamlit
+sweetviz
+plotly
+st-gsheets-connection
+xgboost
+ydata-profiling
