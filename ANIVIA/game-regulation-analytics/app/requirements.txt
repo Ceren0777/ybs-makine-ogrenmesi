@@ -5,4 +5,3 @@ sweetviz
 plotly
 st-gsheets-connection
 xgboost
-ydata-profiling
